@@ -37,7 +37,7 @@ public class SphereTest {
 
     @Test
     public void testToString() {
-        String expected = "Sphere {radius=2.0, surface area=50.26548245743669, volume=33.510321638291124}";
+        String expected = "Sphere {radius = 2.0, surface area = 50.26548245743669, volume = 33.510321638291124}";
         assertEquals(expected, sphere.toString());
     }
 }

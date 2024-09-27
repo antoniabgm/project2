@@ -16,7 +16,7 @@ public class CylinderTest {
 
     @Test
     public void testGetHeight() {
-        assertEquals(4.0, cylinder.getHeight());
+        assertEquals(1.0, cylinder.getHeight());
     }
 
     @Test
@@ -27,7 +27,7 @@ public class CylinderTest {
 
     @Test
     public void testGetRadius() {
-        assertEquals(1.0, cylinder.getRadius());
+        assertEquals(4.0, cylinder.getRadius());
     }
 
     @Test
@@ -38,17 +38,17 @@ public class CylinderTest {
 
     @Test
     public void testSurfaceArea() {
-        assertEquals(31.41592653589793, cylinder.surfaceArea(), 0.0001);
+        assertEquals(125.66370614359172, cylinder.surfaceArea(), 0.0001);
     }
 
     @Test
     public void testVolume() {
-        assertEquals(12.566370614359172, cylinder.volume(), 0.0001);
+        assertEquals(50.26548245743669, cylinder.volume(), 0.0001);
     }
 
     @Test
     public void testToString() {
-        String expected = "Cylinder {height=4.0, radius=1.0, surface area=31.41592653589793, volume=12.566370614359172}";
+        String expected = "Cylinder {radius = 4.0, height = 1.0, surface area = 125.66370614359172, volume = 50.26548245743669}";
         assertEquals(expected, cylinder.toString());
     }
 }
